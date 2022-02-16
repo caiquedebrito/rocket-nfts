@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+:root {
+    --body-background: #0e0e0e;
+    --color-logo: #ff5b50;
+    --card-color: #252525;
+    --text-color: #fff;
+    --subtitle-color: #5a5757;
+    --black-text: #000;
+    --color-input: #0D0D0D;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section#main-1 {
+    background-image: url('assets/background.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--text-color);
+    padding: 2rem 2rem 0 2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+#nav-links a{
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 20px;
+}
+
+.header button {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+section div#description {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4rem 0px;
+}
+
+section > #gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem 0.5rem;
+}
