@@ -60,3 +60,43 @@ section > #gallery {
     flex-wrap: wrap;
     gap: 1rem 0.5rem;
 }
+
+/* Section 2 */
+#main-2 {
+    background-color: var(--color-input);
+    color: var(--text-color);
+    display: grid;
+    grid-template-areas: "numbers text text"
+                         "numbers text text"
+                         "numbers img img"
+    ;
+}
+
+#numbers {
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    grid-area: numbers;
+}
+
+#text {
+    grid-area: text;
+    display: flex;
+}
+
+#text div {
+    padding: 46px 20px;
+}
+
+#img {
+    /* grid-area: 2 / 2 / 3 / 6; */
+    grid-area: img;
+    padding: 0;
+}
+
+#img img {
+    width: 100%;
+}
