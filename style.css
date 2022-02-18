@@ -10,6 +10,8 @@
     --color-input: #0D0D0D;
   }
 
+/* CONFIGURAÇÕES GERAIS */
+
 * {
     margin: 0;
     padding: 0;
@@ -17,12 +19,18 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+section {
+    background-color: var(--body-background);
+    color: var(--text-color);
+}
+
+/* SECTION 1 */
+
 section#main-1 {
     background-image: url('assets/background.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: var(--text-color);
     padding: 2rem 2rem 0 2rem;
 }
 
@@ -99,4 +107,21 @@ section > #gallery {
 
 #img img {
     width: 100%;
+}
+
+/* SECTION 3 */
+.title {
+    padding: 10px;
+}
+
+#astronautas-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 40px;
+}
+
+.astronautas-information {
+    display: flex;
+    justify-content: space-between;
 }
