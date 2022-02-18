@@ -125,3 +125,29 @@ section > #gallery {
     display: flex;
     justify-content: space-between;
 }
+
+/* SECTION 4 */
+#main-4 h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+.artistas-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.artistas-itens {
+    background-color: var(--card-color);
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin: 14px 0;
+}
+
+#mais-artistas {
+    text-align: center;
+}
