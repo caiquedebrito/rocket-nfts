@@ -24,9 +24,13 @@ section {
     color: var(--text-color);
 }
 
+a {
+    text-decoration: none;
+}
+
 /* SECTION 1 */
 
-section#main-1 {
+.main-1 {
     background-image: url('assets/background.png');
     background-position: center center;
     background-repeat: no-repeat;
@@ -44,7 +48,7 @@ h1 {
     font-size: 2.5rem;
 }
 
-#nav-links a{
+.nav-links a{
     color: var(--text-color);
     text-decoration: none;
     padding: 20px;
@@ -56,13 +60,13 @@ h1 {
     font-weight: 700;
 }
 
-section div#description {
+div.description {
     display: flex;
     justify-content: space-evenly;
     margin: 4rem 0px;
 }
 
-section > #gallery {
+.gallery {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -70,7 +74,7 @@ section > #gallery {
 }
 
 /* Section 2 */
-#main-2 {
+.main-2 {
     background-color: var(--color-input);
     color: var(--text-color);
     display: grid;
@@ -80,7 +84,7 @@ section > #gallery {
     ;
 }
 
-#numbers {
+div.numbers {
     align-self: center;
     justify-self: center;
     display: flex;
@@ -90,22 +94,22 @@ section > #gallery {
     grid-area: numbers;
 }
 
-#text {
+div.text {
     grid-area: text;
     display: flex;
 }
 
-#text div {
+div.text div {
     padding: 46px 20px;
 }
 
-#img {
+div.img {
     /* grid-area: 2 / 2 / 3 / 6; */
     grid-area: img;
     padding: 0;
 }
 
-#img img {
+div.img img {
     width: 100%;
 }
 
@@ -114,7 +118,7 @@ section > #gallery {
     padding: 10px;
 }
 
-#astronautas-div {
+div.astronautas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
@@ -127,15 +131,17 @@ section > #gallery {
 }
 
 /* SECTION 4 */
-#main-4 h2 {
+.main-4 h2 {
     text-align: center;
     font-size: xx-large;
 }
-.artistas-div {
+.artistas {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    max-width: 1399px;
+    margin: auto;
 }
 
 .artistas-itens {
@@ -150,4 +156,52 @@ section > #gallery {
 
 #mais-artistas {
     text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--card-color);
+    color: var(--subtitle-color);
+    padding: 20px 0;
+}
+
+footer > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+}
+
+.row-2 {
+    align-items: flex-start;
+}
+
+div.links {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+div.links ul {
+    list-style: none;
+}
+
+div.links ul li a {
+    color: var(--subtitle-color);
+}
+
+.arrow {
+    background-color: var(--color-logo);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 23%;
 }
