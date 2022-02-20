@@ -59,6 +59,14 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 811px) {
+    .header {
+        justify-content: center;
+        row-gap: 10px;
+    }
 }
 
 h1 {
@@ -73,6 +81,7 @@ h1 {
     display: flex;
     align-items: center;
     font-weight: 700;
+    width: 160px;
 }
 
 div.description {
@@ -139,6 +148,7 @@ div.numbers {
     text-align: center;
     border-bottom: 1px solid #5a5757;
     border-right: 1px solid #5a5757;
+    margin-bottom: 8px;
 }
 
 @media (max-width: 700px) {
@@ -155,6 +165,11 @@ div.text {
 
 div.text div {
     padding: 46px 20px;
+}
+
+div.text div a{
+    display: block;
+    margin-top: 15px;
 }
 
 div.img {
@@ -217,6 +232,11 @@ div.astronautas {
     align-items: center;
     padding: 20px;
     margin: 14px 0;
+    transition: 4s .5 ease-in-out;
+}
+
+.artistas-itens:hover{
+    transform: scale(1.1);
 }
 
 #mais-artistas {
@@ -282,6 +302,7 @@ div.links ul li a {
 
 #cadastro-email input {
     height: 50px;
+    margin-top: 12px;
 }
 
 #email {
