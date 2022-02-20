@@ -19,6 +19,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 section {
     background-color: var(--body-background);
     color: var(--text-color);
@@ -26,6 +30,19 @@ section {
 
 a {
     text-decoration: none;
+    color: var(--text-color);
+}
+
+.gray {
+    color: var(--subtitle-color);
+}
+
+.orange {
+    color: var(--color-logo);
+}
+
+.white {
+    color: var(--text-color);
 }
 
 /* SECTION 1 */
@@ -45,12 +62,10 @@ a {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
 
 .nav-links a{
-    color: var(--text-color);
-    text-decoration: none;
     padding: 20px;
 }
 
@@ -64,6 +79,21 @@ div.description {
     display: flex;
     justify-content: space-evenly;
     margin: 4rem 0px;
+}
+
+@media (max-width: 780px) {
+    div.description {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.description > div {
+    margin: 20px;
 }
 
 .gallery {
@@ -84,6 +114,18 @@ div.description {
     ;
 }
 
+@media (max-width: 700px) {
+    .main-2 {
+        grid-template-areas: "numbers"
+                             "text"
+                             "img";
+    }
+}
+
+.main-2 > div {
+    padding: 29px;
+}
+
 div.numbers {
     align-self: center;
     justify-self: center;
@@ -91,7 +133,19 @@ div.numbers {
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
+    width: 100%;
     grid-area: numbers;
+    font-size: 1.6rem;
+    text-align: center;
+    border-bottom: 1px solid #5a5757;
+    border-right: 1px solid #5a5757;
+}
+
+@media (max-width: 700px) {
+    div.numbers {
+        flex-direction: row;
+
+    }
 }
 
 div.text {
@@ -114,15 +168,22 @@ div.img img {
 }
 
 /* SECTION 3 */
-.title {
-    padding: 10px;
-}
-
 div.astronautas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     gap: 40px;
+}
+
+.main-3 h2 {
+    margin-left: 11%;
+    padding: 3rem 0;
+}
+
+@media (max-width: 765px) {
+    div.astronautas {
+        grid-template-columns: 1fr;
+    }
 }
 
 .astronautas-information {
@@ -131,9 +192,13 @@ div.astronautas {
 }
 
 /* SECTION 4 */
+.main-4 {
+    padding: 7rem 1rem;
+}
 .main-4 h2 {
     text-align: center;
     font-size: xx-large;
+    padding-bottom: 2rem;
 }
 .artistas {
     display: flex;
@@ -156,6 +221,7 @@ div.astronautas {
 
 #mais-artistas {
     text-align: center;
+    padding-top: 2rem;
 }
 
 /* FOOTER */
@@ -175,12 +241,20 @@ footer > div {
 
 .row-2 {
     align-items: flex-start;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
 }
 
 div.links {
     display: flex;
     justify-content: space-between;
     width: 50%;
+}
+
+@media (max-width: 875px) {
+    div.links {
+        width: 100%;
+    }
 }
 
 div.links ul {
@@ -204,4 +278,21 @@ div.links ul li a {
     display: flex;
     justify-content: space-between;
     flex-basis: 23%;
+}
+
+#cadastro-email input {
+    height: 50px;
+}
+
+#email {
+    background-color: var(--color-input);
+    border: none;
+    width: 230px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+input[type=submit] {
+    width: 80px;
+    font-weight: bolder;
 }
