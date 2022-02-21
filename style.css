@@ -73,8 +73,13 @@ h1 {
     font-size: 2.2rem;
 }
 
+.nav-links {
+    display: flex;
+}
+
 .nav-links a{
     padding: 20px;
+    display: block;
 }
 
 .header button {
@@ -82,6 +87,74 @@ h1 {
     align-items: center;
     font-weight: 700;
     width: 160px;
+}
+
+.bars {
+    position: absolute;
+    right: 1rem;
+    top: 2.1rem;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bars a {
+    margin: 3px 0;
+    height: 4px;
+    width: 34px;
+    background-color: white;
+}
+
+/* MENU MOBILE */
+@media (max-width: 400px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .logo {
+        padding-right: 10%;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links a {
+        width: 100%;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .bars {
+        display: flex;
+    }
+}
+
+.toggle {
+    display: flex;
+}
+
+.animation a {
+    transition: all 1s;
+}
+
+.animation > .bar1{
+    transform: rotate(45deg) translate(10px, 6px);
+}
+
+.animation > .bar2 {
+    opacity: 0;
+}
+
+.animation > .bar3 {
+    transform: rotate(-45deg) translate(6px, -5px);
 }
 
 div.description {
@@ -110,6 +183,10 @@ div.description {
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem 0.5rem;
+}
+
+.gallery div {
+    border: 1px solid white;
 }
 
 /* Section 2 */
@@ -173,7 +250,6 @@ div.text div a{
 }
 
 div.img {
-    /* grid-area: 2 / 2 / 3 / 6; */
     grid-area: img;
     padding: 0;
 }
