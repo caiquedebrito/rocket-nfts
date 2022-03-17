@@ -1,9 +1,11 @@
-<<<<<<< HEAD
 # Rocket NFT's
 <!-- Badges to the projects  -->
 <!--  Link: https://dev.to/envoy_/150-badges-for-github-pnk -->
+<div>
 <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" align="left"/>
-<img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" align="right"/>  
+<img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" align="right"/> 
+</div>
+
 
 ## Description
 Desafio proposto pela @rocketseat para pôr em prática conhecimentos de Html e CSS.
