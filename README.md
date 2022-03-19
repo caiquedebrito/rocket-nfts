@@ -1,4 +1,4 @@
-# Rocket NFT's
+# 🌟Rocket NFT's
 <!-- Badges to the projects  -->
 <!--  Link: https://dev.to/envoy_/150-badges-for-github-pnk -->
 <div>
@@ -7,7 +7,7 @@
 </div>
 <br/>
 
-## Description
+## 📝Description
 Desafio proposto pela @rocketseat para pôr em prática conhecimentos de Html e CSS.
 Consiste, basicamente, em uma landing page responsiva sobre NFTs.
                                                                                                               
@@ -20,5 +20,5 @@ Consiste, basicamente, em uma landing page responsiva sobre NFTs.
   <img src="https://user-images.githubusercontent.com/88737351/157127289-73ca6c1f-f00c-4b77-b947-b632a76d93eb.png"/>
 </div>                                                                                                             
 
-## View
+## 👁️View
 <a href="https://caiquedebrito.github.io/rocket-nfts/">Click here to view</a>
